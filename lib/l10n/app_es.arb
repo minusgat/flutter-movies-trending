@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "home": "Inicio",
+  "@home": {
+    "description": "Descripcion de la etiqueta Inicio"
+  },
+  "profile": "Perfil",
+  "@helloWorld": {
+    "description": "Descripcion de la etiqueta Perfil"
+  }
+}
