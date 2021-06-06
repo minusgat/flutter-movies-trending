@@ -18,10 +18,19 @@ dependencies:
   intl: ^0.17.0
   # Value equality
   equatable: ^2.0.2
+  # Functional Programming in Dart
+  dartz: ^0.10.0-nullsafety.1
+  #Http Client
+  http: ^0.13.3
+  # DI support
+  get_it: ^7.1.3
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # Mock Framework added
+  mockito: ^5.0.9
 
 flutter:
   uses-material-design: true
