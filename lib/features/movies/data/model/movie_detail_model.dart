@@ -1,4 +1,4 @@
-import 'package:flutter_movies_trending/features/movies/domain/entity/movie_detail_entity.dart';
+import '../../domain/entity/movie_detail_entity.dart';
 
 class MovieDetailModel extends MovieDetailEntity {
   final bool? adult;

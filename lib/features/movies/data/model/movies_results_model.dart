@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_movies_trending/features/movies/data/model/movie_model.dart';
+import 'movie_model.dart';
 
 MoviesResultModel moviesResultModelFromJson(String str) =>
     MoviesResultModel.fromJson(json.decode(str));
