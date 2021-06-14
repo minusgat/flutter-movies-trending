@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 import '../../domain/entity/movie_entity.dart';
 
 class MovieModel extends MovieEntity {
@@ -63,6 +65,7 @@ class MovieModel extends MovieEntity {
     );
   }
 
+
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['id'] = this.id;
@@ -82,4 +85,7 @@ class MovieModel extends MovieEntity {
     data['media_type'] = this.mediaType;
     return data;
   }
+
+  get voteAverageFormatted => this.voteAverage! / 2 ;
+  get releaseDateFormatted => DateFormat('Hms', 'en_US').parse('14:23:01');
 }

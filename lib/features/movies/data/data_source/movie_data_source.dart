@@ -4,7 +4,7 @@ import '../model/movie_model.dart';
 import '../model/movies_results_model.dart';
 
 abstract class MovieDataSource {
-  Future<List<MovieModel>> getTrending();
+  Future<List<MovieModel>> getTrending(int page,String language);
 
   Future<List<MovieModel>> getSearchedMovies(String query);
 
@@ -17,8 +17,9 @@ class MovieDataSourceImpl extends MovieDataSource {
   MovieDataSourceImpl(this._client);
 
   @override
-  Future<List<MovieModel>> getTrending() async {
-    final response = await _client.get('trending/movie/day');
+  Future<List<MovieModel>> getTrending(int page,String language) async {
+    final lenguajes = {'language': language, 'page': page};
+    final response = await _client.get('trending/movie/day', params: lenguajes);
     final movies = MoviesResultModel.fromJson(response).results;
     return movies;
   }

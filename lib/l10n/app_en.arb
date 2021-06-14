@@ -1,7 +1,10 @@
 {
   "@@locale": "en",
+  "title": "Movies Trending",
   "home": "Home",
-  "@home": {
-    "description": "Initial Route name"
-  }
+  "discover": "Discover",
+  "settings": "Settings",
+  "emptyResponse": "Ups there was nothing to show",
+  "wrongMessage": "Ups there was something went wrong",
+  "pickALanguage": "Pick a Language"
 }

@@ -6,8 +6,8 @@ class Languages {
   const Languages._();
 
   static const languages = [
-    LanguageEntity(code: 'en', value: 'English', key: SupportedLanguage.en),
     LanguageEntity(code: 'es', value: 'Spanish', key: SupportedLanguage.es),
+    LanguageEntity(code: 'en', value: 'English', key: SupportedLanguage.en),
     LanguageEntity(code: 'pt', value: 'Portuguese', key: SupportedLanguage.pt),
   ];
 

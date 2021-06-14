@@ -1,10 +1,11 @@
 import 'package:equatable/equatable.dart';
 
-class MovieParams extends Equatable {
+class MovieDetailParams extends Equatable {
   final int id;
+  final String language;
 
-  const MovieParams(this.id);
+  const MovieDetailParams(this.id, this.language);
 
   @override
-  List<Object> get props => [id];
+  List<Object> get props => [id,language];
 }

@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import '../../../../commons/error/app_error.dart';
 import '../entity/movie_entity.dart';
 import '../entity/movie_search_params.dart';
-import '../repository/movie_repository.dart';
+import '../repository/language_repository.dart';
 import 'use_case.dart';
 
 class GetMovieSearch extends UseCase<List<MovieEntity>, MovieSearchParams> {

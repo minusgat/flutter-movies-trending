@@ -1,11 +1,10 @@
 {
   "@@locale": "pt",
   "home": "Começar",
-  "@home": {
-    "description": "Descrição da tag Home"
-  },
-  "profile": "Perfil",
-  "@helloWorld": {
-    "description": "Descrição do rótulo do perfil"
-  }
+  "title": "Tendências de filmes",
+  "discover": "Descobrir",
+  "settings": "Configurações",
+  "emptyResponse": "Ups, não havia nada para mostrar",
+  "wrongMessage": "Ups, Algo deu errado",
+  "pickALanguage": "Escolha um idioma"
 }

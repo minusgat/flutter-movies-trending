@@ -7,4 +7,6 @@ class ApiConstants {
   static const movie_data_base_api_key ='0c6a2037682ed871cd069f2d30d686a1';
   static const movie_data_base_image_base_url =
       'https://image.tmdb.org/t/p/w500/';
+
+  static var formatImageUrl =(url)=>'$movie_data_base_image_base_url$url';
 }

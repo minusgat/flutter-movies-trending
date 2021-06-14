@@ -47,13 +47,16 @@ class ApiClient {
 
   Uri getPath(String path, Map<dynamic, dynamic>? params) {
     var paramsString = '';
+    var parsedUri;
     if (params?.isNotEmpty ?? false) {
       params?.forEach((key, value) {
         paramsString += '&$key=$value';
       });
     }
 
-    return Uri.parse(
-        '${ApiConstants.movie_data_base_base_url}$path$paramsString');
+    parsedUri = Uri.parse(
+        '${ApiConstants.movie_data_base_base_url}$path?${paramsString.substring(1)}');
+
+    return parsedUri;
   }
 }

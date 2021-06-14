@@ -1,11 +1,10 @@
 {
-  "@@locale": "en",
+  "@@locale": "es",
   "home": "Inicio",
-  "@home": {
-    "description": "Descripcion de la etiqueta Inicio"
-  },
-  "profile": "Perfil",
-  "@helloWorld": {
-    "description": "Descripcion de la etiqueta Perfil"
-  }
+  "title": "Películas en tendencia",
+  "discover": "Explorar",
+  "settings": "Configuraciones",
+  "emptyResponse": "Ups no hay nada para mostrar",
+  "wrongMessage": "Ups parece ser que algo salio mal",
+  "pickALanguage": "Selecciona un idioma"
 }
