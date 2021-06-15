@@ -1,0 +1,422 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/wjQXZTlFM3PVEUmKf1sUajjygqT.jpg",
+    "genre_ids": [
+      878,
+      28,
+      53
+    ],
+    "id": 581726,
+    "original_language": "en",
+    "original_title": "Infinite",
+    "overview": "",
+    "poster_path": "/niw2AKHz6XmwiRMLWaoyAOAti0G.jpg",
+    "release_date": "2021-09-08",
+    "title": "Infinite",
+    "video": false,
+    "vote_average": 0.0,
+    "vote_count": 0,
+    "popularity": 222.687,
+    "media_type": "movie"
+  },
+  {
+    "video": false,
+    "vote_average": 8.2,
+    "overview": "“The Conjuring 3: A Obra do Diabo” revela a arrepiante história de um assassinato e uma entidade malévola que chocou os experientes investigadores de atividades paranormais, Ed e Lorraine Warren. Este é um dos mais sensacionais casos dos seus arquivos, que começa com a luta pela alma de um jovem rapaz, levando-os para além de algo que nunca antes tinham visto. Pela primeira vez na história dos Estados Unidos da América, um suspeito de homicídio declara estar possuído por um demónio para se defender.",
+    "release_date": "2021-05-25",
+    "title": "The Conjuring 3 - A Obra do Diabo",
+    "adult": false,
+    "backdrop_path": "/qi6Edc1OPcyENecGtz8TF0DUr9e.jpg",
+    "genre_ids": [
+      27,
+      9648,
+      53
+    ],
+    "vote_count": 1961,
+    "original_language": "en",
+    "original_title": "The Conjuring: The Devil Made Me Do It",
+    "poster_path": "/8jBgDFFDYz8WHxiOBJ7GBiMM6Pe.jpg",
+    "id": 423108,
+    "popularity": 5633.823,
+    "media_type": "movie"
+  },
+  {
+    "backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
+    "genre_ids": [
+      28,
+      878,
+      12
+    ],
+    "original_language": "en",
+    "original_title": "Godzilla vs. Kong",
+    "poster_path": "/wllzjZxg4ynlAm5xmOICJ2uHOPJ.jpg",
+    "id": 399566,
+    "vote_average": 8.0,
+    "vote_count": 5958,
+    "overview": "Uma luta pelo reino dos monstros, entre o imparável Godzilla e o gigantesco Kong, num mundo onde o homem e os monstros coexistem e os grupos inimigos querem manipular os Titãs para que a guerra comece a surgir sob o disfarce de uma conspiração nefasta, ameaçando acabar com a vida no Planeta.",
+    "release_date": "2021-03-24",
+    "title": "Godzilla vs. Kong",
+    "video": false,
+    "adult": false,
+    "popularity": 2003.759,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/4kIRrW1AlHP5Idne8CPHeQt8nR5.jpg",
+    "genre_ids": [
+      16,
+      10751,
+      35,
+      14
+    ],
+    "id": 550205,
+    "original_language": "en",
+    "original_title": "Wish Dragon",
+    "overview": "Din, um estudante de origens humildes que sonha em grande e Long, um dragão cínico com o poder de conceder desejos partem numa hilariante aventura através da Xangai atual em busca de Lina, uma amiga de infância do rapaz. A sua viagem obriga-os a responder a algumas das maiores questões existenciais – porque quando podemos desejar aquilo que quisermos, temos de decidir o que realmente importa na vida.",
+    "poster_path": "/ySpuOH05bQXXhmQmJtatbZ86rEy.jpg",
+    "release_date": "2021-01-15",
+    "title": "O Dragão dos Desejos",
+    "video": false,
+    "vote_average": 7.8,
+    "vote_count": 51,
+    "popularity": 33.1,
+    "media_type": "movie"
+  },
+  {
+    "video": false,
+    "vote_average": 7.4,
+    "overview": "",
+    "release_date": "2021-06-10",
+    "id": 467909,
+    "adult": false,
+    "backdrop_path": "/uEJuqp08dH6IQwZJGASlPZOXqKu.jpg",
+    "vote_count": 44,
+    "genre_ids": [
+      18,
+      10402,
+      10749
+    ],
+    "title": "In the Heights",
+    "original_language": "en",
+    "original_title": "In the Heights",
+    "poster_path": "/RO4KoJyoQMQzh9z76d4v4FJMmJ.jpg",
+    "popularity": 332.935,
+    "media_type": "movie"
+  },
+  {
+    "video": false,
+    "vote_average": 8.6,
+    "overview": "Emma Stone é a protagonista de “Cruella” da Disney, que explora o início rebelde de uma das vilãs mais notórias e elegantes do cinema, Cruella de Vil. Situado na década de 1970, em Londres, no meio da revolução punk rock, o filme segue uma jovem vigarista chamada Estella e revela a série de acontecimentos que a fizeram abraçar o seu lado malvado e tornar-se a estridente e vingativa Cruella.",
+    "release_date": "2021-05-26",
+    "vote_count": 2602,
+    "adult": false,
+    "backdrop_path": "/6MKr3KgOLmzOP6MSuZERO41Lpkt.jpg",
+    "title": "Cruella",
+    "genre_ids": [
+      35,
+      80
+    ],
+    "id": 337404,
+    "original_language": "en",
+    "original_title": "Cruella",
+    "poster_path": "/ljPHd7WiPVKmuXi1hgQUpZQslbC.jpg",
+    "popularity": 6234.63,
+    "media_type": "movie"
+  },
+  {
+    "genre_ids": [
+      28,
+      12,
+      18,
+      878,
+      53
+    ],
+    "original_language": "en",
+    "original_title": "Awake",
+    "poster_path": "/uZkNbB8isWXHMDNoIbqXvmslBMC.jpg",
+    "video": false,
+    "title": "Awake",
+    "overview": "",
+    "release_date": "2021-06-09",
+    "vote_count": 195,
+    "vote_average": 6.2,
+    "adult": false,
+    "backdrop_path": "/4GANLhzt7sukxpBSeAJxlwH0hMs.jpg",
+    "id": 615658,
+    "popularity": 250.492,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/kFZAu1g0f7bpunIumUY8Gb3Y9WU.jpg",
+    "genre_ids": [
+      18
+    ],
+    "vote_count": 13,
+    "original_language": "en",
+    "original_title": "Skater Girl",
+    "poster_path": "/ktEHgKnmjqvw5X0taOCgKyYYvQd.jpg",
+    "id": 785522,
+    "title": "Skater Girl",
+    "vote_average": 8.3,
+    "video": false,
+    "overview": "",
+    "release_date": "2021-06-11",
+    "popularity": 66.405,
+    "media_type": "movie"
+  },
+  {
+    "overview": "Dom Toretto leva uma vida tranquila, longe de tudo, com Letty e o seu filho, o pequeno Brian. Mas todos sabem que para lá do horizonte pacífico, o perigo está sempre à espreita. Desta vez, esta ameaça vai forçar Dom a enfrentar os pecados do seu passado para conseguir salvar aqueles que mais ama. A sua equipa volta a unir-se para travar um plano que vai chocar o mundo, liderado pelo melhor condutor e maior assassino que alguma vez encontraram: Jakob, o irmão abandonado de Dom.",
+    "release_date": "2021-05-19",
+    "adult": false,
+    "backdrop_path": "/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg",
+    "vote_count": 119,
+    "genre_ids": [
+      28,
+      12,
+      53
+    ],
+    "poster_path": "/8L4Mep3KDUK4ztUgf2HlPvUVzZy.jpg",
+    "original_language": "en",
+    "original_title": "F9",
+    "id": 385128,
+    "title": "Velocidade Furiosa 9",
+    "video": false,
+    "vote_average": 8.1,
+    "popularity": 480.908,
+    "media_type": "movie"
+  },
+  {
+    "overview": "Depois de uma emboscada mortal a um dos seus carros blindados, uma empresa de alta segurança contrata um novo e misterioso funcionário, Patrick Hill (Statham), que fica conhecido simplesmente como “H”. À medida que aprende o funcionamento da empresa com o parceiro Bullet, H transparece, desde o início, ser um tipo sossegado, tranquilo, sempre cabisbaixo, simplesmente com o foco do trabalho e no ganhar a vida. Mas quando ele e Bullet tornam-se alvos de uma tentativa de roubo, as habilidades formidáveis ??de H são reveladas. Na verdade, H é um chefe do crime disfarçado que busca desesperadamente uma maneira de vingar o assassinato do seu filho. A sua missão dá uma reviravolta inesperada quando um grupo de ex-militares, liderados pelo inteligente e calculista Jackson, organiza um assalto único que lhes valerá uma fortuna inesperada de milhões.",
+    "release_date": "2021-04-22",
+    "adult": false,
+    "backdrop_path": "/70AV2Xx5FQYj20labp0EGdbjI6E.jpg",
+    "vote_count": 884,
+    "genre_ids": [
+      80,
+      28
+    ],
+    "title": "Um Homem Furioso",
+    "original_language": "en",
+    "original_title": "Wrath of Man",
+    "poster_path": "/dAtAp4IeT6EYGhewfnNNhalobme.jpg",
+    "video": false,
+    "id": 637649,
+    "vote_average": 7.9,
+    "popularity": 3326.751,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/uZDE9VnKFnIPmWriMjnp82bH9S8.jpg",
+    "genre_ids": [
+      28,
+      53
+    ],
+    "id": 825997,
+    "original_language": "en",
+    "original_title": "Rogue Hostage",
+    "overview": "",
+    "poster_path": "/ePYagdzUwKpzTP73n9CD3D1MFn.jpg",
+    "release_date": "2021-06-11",
+    "title": "Rogue Hostage",
+    "video": false,
+    "vote_average": 7.5,
+    "vote_count": 6,
+    "popularity": 57.306,
+    "media_type": "movie"
+  },
+  {
+    "title": "Um Lugar Silencioso 2",
+    "vote_count": 209,
+    "adult": false,
+    "backdrop_path": "/z2UtGA1WggESspi6KOXeo66lvLx.jpg",
+    "release_date": "2021-05-21",
+    "genre_ids": [
+      878,
+      53,
+      27
+    ],
+    "video": false,
+    "original_language": "en",
+    "original_title": "A Quiet Place Part II",
+    "poster_path": "/wYqmuxd9jNFLf3gtQY5vbAUgiGk.jpg",
+    "overview": "Após os eventos mortais ocorridos em casa, a família Abbott terá agora que enfrentar os terrores do mundo exterior enquanto continua a lutar em silêncio pela sobrevivência. Forçados a arriscarem-se no desconhecido, rapidamente percebem que as criaturas que caçam pelo som não são as únicas ameaças que se escondem além do caminho de areia.",
+    "id": 520763,
+    "vote_average": 7.3,
+    "popularity": 1955.976,
+    "media_type": "movie"
+  },
+  {
+    "video": false,
+    "vote_average": 6.5,
+    "overview": "",
+    "release_date": "2021-05-12",
+    "title": "Spiral: From the Book of Saw",
+    "adult": false,
+    "backdrop_path": "/7JENyUT8ABxcvrcijDBVpdjgCY9.jpg",
+    "genre_ids": [
+      27,
+      53,
+      9648
+    ],
+    "vote_count": 323,
+    "original_language": "en",
+    "original_title": "Spiral: From the Book of Saw",
+    "poster_path": "/3OneyM3YB6WPdvrfdixL17MXH3J.jpg",
+    "id": 602734,
+    "popularity": 1990.269,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/gJckSA3Evn5gouT62rytjLbTzoj.jpg",
+    "genre_ids": [
+      28,
+      35,
+      53
+    ],
+    "id": 522931,
+    "original_language": "en",
+    "original_title": "Hitman's Wife's Bodyguard",
+    "overview": "O guarda-costas Michael Bryce (Ryan Reynolds) e o assassino Darius Kincaid (Samuel L. Jackson) estão de volta noutra missão arriscada. Ainda sem licença e sob escrutínio, Bryce é forçado a entrar em ação para proteger Sonia (Salma Hayek), a esposa ainda mais volátil de Darius. Enquanto a paciência de Bryce é levada ao limite, o trio envolve-se numa trama global e descobre que são tudo o que resta para proteger a Europa de um poderoso e vingativo louco (Morgan Freeman).",
+    "poster_path": "/oht9CZHNDBEu5KitgxUsb0LhQ8v.jpg",
+    "release_date": "2021-06-10",
+    "title": "O Guarda-Costas e a Mulher do Assassino",
+    "video": false,
+    "vote_average": 6.8,
+    "vote_count": 6,
+    "popularity": 123.402,
+    "media_type": "movie"
+  },
+  {
+    "vote_average": 7.1,
+    "overview": "“Santuário das Sombras” conta a história de Alice, uma jovem com deficiência auditiva que, após uma suposta aparição da Virgem Maria, fica inexplicavelmente capaz de ouvir, falar e curar os doentes. À medida que a notícia se espalha e pessoas de perto e de longe reúnem-se para testemunhar os seus milagres, um jornalista desacreditado, que tenta fazer ressurgir a sua carreira, visita a pequena cidade de Nova Inglaterra para investigar o caso. Quando, por toda a parte, surgem acontecimentos aterradores, este jornalista começa a questionar se esses fenómenos serão obras da Virgem Maria ou de algo muito mais sinistro.",
+    "release_date": "2021-03-31",
+    "adult": false,
+    "backdrop_path": "/jw6ASGRT2gi8EjCImpGtbiJ9NQ9.jpg",
+    "vote_count": 906,
+    "genre_ids": [
+      27
+    ],
+    "id": 632357,
+    "original_language": "en",
+    "original_title": "The Unholy",
+    "poster_path": "/zduyzcjyahZtP4fGZE6789h04IM.jpg",
+    "title": "Santuário das Sombras",
+    "video": false,
+    "popularity": 2333.883,
+    "media_type": "movie"
+  },
+  {
+    "original_language": "en",
+    "original_title": "Raya and the Last Dragon",
+    "poster_path": "/yXrb84zJidCefyhTWHwo4yCDvwz.jpg",
+    "video": false,
+    "vote_average": 8.2,
+    "overview": "Há muito tempo, no mundo de fantasia de Kumandra, humanos e dragões viviam juntos em harmonia. Mas, quando uma força maligna ameaçou a terra, os dragões sacrificaram-se para salvar a humanidade. Agora, 500 anos depois, o mesmo mal voltou e cabe a uma guerreira solitária, Raya, localizar o último dragão lendário para recuperar a terra separada e o seu povo dividido. No entanto, ao longo da sua missão, vai aprender que será necessário mais do que um dragão para salvar o mundo - também vai precisar de confiança e de trabalho em equipa.",
+    "release_date": "2021-03-03",
+    "vote_count": 3329,
+    "id": 527774,
+    "adult": false,
+    "backdrop_path": "/hJuDvwzS0SPlsE6MNFOpznQltDZ.jpg",
+    "title": "Raya e o Último Dragão",
+    "genre_ids": [
+      16,
+      12,
+      14,
+      10751,
+      28
+    ],
+    "popularity": 1041.788,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/9WlJFhOSCPnaaSmsrv0B4zA8iUb.jpg",
+    "genre_ids": [
+      28,
+      80,
+      878,
+      27,
+      53
+    ],
+    "original_language": "en",
+    "original_title": "Army of the Dead",
+    "id": 503736,
+    "vote_count": 1528,
+    "video": false,
+    "title": "Exército dos Mortos",
+    "vote_average": 6.5,
+    "overview": "Após um surto zombie em Las Vegas, um grupo de mercenários aposta todas as fichas numa jogada arriscada: entrar na zona de quarentena e realizar o maior golpe de sempre.",
+    "release_date": "2021-05-14",
+    "poster_path": "/kn72J6BFcN71VYOl8sTVeo7x9ph.jpg",
+    "popularity": 2163.165,
+    "media_type": "movie"
+  },
+  {
+    "release_date": "2021-03-18",
+    "id": 791373,
+    "adult": false,
+    "backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+    "genre_ids": [
+      28,
+      12,
+      14,
+      878
+    ],
+    "original_language": "en",
+    "original_title": "Zack Snyder's Justice League",
+    "poster_path": "/ArWn6gCi61b3b3hclD2L0LOk66k.jpg",
+    "vote_count": 5757,
+    "video": false,
+    "vote_average": 8.5,
+    "title": "Liga da Justiça de Zack Snyder",
+    "overview": "Determinado a assegurar que o derradeiro sacrifício do Super-Homem não foi em vão, Bruce Wayne une forças com Diana Prince para recrutar uma equipa e proteger o mundo de uma ameaça de proporções catastróficas.",
+    "popularity": 1143.389,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/sOA1ubMAQ6dCIrjoFIEDt3FCxFf.jpg",
+    "genre_ids": [
+      878,
+      53
+    ],
+    "original_language": "en",
+    "original_title": "Voyagers",
+    "poster_path": "/gn2vCmWO7jQBBto9SYuBHYZARaU.jpg",
+    "vote_count": 138,
+    "video": false,
+    "vote_average": 6.5,
+    "title": "Voyagers",
+    "overview": "",
+    "release_date": "2021-04-08",
+    "id": 597890,
+    "popularity": 162.718,
+    "media_type": "movie"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/2VBf6N8deNZIWAMGvR7Pu62D5Al.jpg",
+    "genre_ids": [
+      53,
+      18,
+      9648
+    ],
+    "id": 522406,
+    "original_language": "en",
+    "original_title": "Flashback",
+    "overview": "",
+    "poster_path": "/nc7szo7ChOknEk8qCkABJyNgl5y.jpg",
+    "release_date": "2021-06-03",
+    "title": "Flashback",
+    "video": false,
+    "vote_average": 6.8,
+    "vote_count": 38,
+    "popularity": 216.737,
+    "media_type": "movie"
+  }
+]
