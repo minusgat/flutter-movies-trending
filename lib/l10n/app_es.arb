@@ -6,5 +6,9 @@
   "settings": "Configuraciones",
   "emptyResponse": "Ups no hay nada para mostrar",
   "wrongMessage": "Ups parece ser que algo salio mal",
-  "pickALanguage": "Selecciona un idioma"
+  "pickALanguage": "Selecciona un idioma",
+  "languageChanged": "El idioma ha cambiado",
+  "en": "Inglés",
+  "es": "Español",
+  "pt": "Portugués"
 }

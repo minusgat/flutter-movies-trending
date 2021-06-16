@@ -6,5 +6,9 @@
   "settings": "Settings",
   "emptyResponse": "Ups there was nothing to show",
   "wrongMessage": "Ups there was something went wrong",
-  "pickALanguage": "Pick a Language"
+  "pickALanguage": "Pick a Language",
+  "languageChanged": "The language has changed",
+  "en": "English",
+  "es": "Spanish",
+  "pt": "Portuguese"
 }
