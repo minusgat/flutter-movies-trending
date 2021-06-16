@@ -22,6 +22,10 @@ flutter gen-l10n
 flutter run 
 ```
 
+###IOS case
+- [Adding Supported Locales](#adding-supported-locales)
+
+
 
 ## CLEAN Arquitecture
 I'm try to implement a clean arquitecture with this directory tree
@@ -117,6 +121,22 @@ You need to run the `gen-l10n` command, after you create your's `.arb` files  be
 
 ```sh
 flutter gen-l10n
+```
+
+5. ###  Adding Supported Locales 
+
+At the ios Case you need to do some additional confgis
+
+Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info.plist` to include the new locale.
+
+```xml
+ 
+    <key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>es</string>
+	</array>
+
 ```
 
 5. ### Localizely
