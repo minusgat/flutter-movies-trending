@@ -14,10 +14,9 @@ class MovieRepositoryImpl extends MovieRepository {
   MovieRepositoryImpl(this.movieDataSource);
 
   @override
-  Future<Either<AppError, List<MovieModel>>> getTrending(
-      int page, String language) async {
+  Future<Either<AppError, List<MovieModel>>> getTrending(int page , String language) async {
     try {
-      final movies = await movieDataSource.getTrending(page, language);
+      final movies = await movieDataSource.getTrending(page,language);
       return Right(movies);
     } on SocketException {
       return Left(AppError(AppErrorType.network));
@@ -40,8 +39,7 @@ class MovieRepositoryImpl extends MovieRepository {
   }
 
   @override
-  Future<Either<AppError, MovieDetailEntity>> getMovieDetail(
-      int id, String language) async {
+  Future<Either<AppError, MovieDetailEntity>> getMovieDetail(int id,String language) async {
     try {
       final movieDetail = await movieDataSource.getMovieDetail(id);
       return Right(movieDetail);

@@ -65,7 +65,6 @@ class MovieModel extends MovieEntity {
     );
   }
 
-
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['id'] = this.id;
@@ -86,6 +85,12 @@ class MovieModel extends MovieEntity {
     return data;
   }
 
-  get voteAverageFormatted => this.voteAverage! / 2 ;
-  get releaseDateFormatted => DateFormat('Hms', 'en_US').parse('14:23:01');
+  get voteAverageFormatted => this.voteAverage ?? 0 / 2;
+
+  String formatDate(String date, String locale) {
+    DateTime now = DateTime.tryParse(date) ?? DateTime.now();
+    String formattedDate = DateFormat.yMMMMd(locale).format(now);
+    return formattedDate;
+  }
+
 }
