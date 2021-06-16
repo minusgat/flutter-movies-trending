@@ -1,8 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_movies_trending/features/movies/domain/entity/pagination_params.dart';
-import 'package:flutter_movies_trending/features/movies/presentation/bloc/language_bloc/language_cubit.dart';
-import 'package:flutter_movies_trending/features/movies/presentation/bloc/loader_cubit/loader_cubit.dart';
+import '../../../domain/entity/pagination_params.dart';
+import '../../../domain/use_case/get_movie_search.dart';
+import '../language_bloc/language_cubit.dart';
+import '../loader_bloc/loader_cubit.dart';
+import '../notification_bloc/notification_cubit.dart';
 import '../../../../../commons/constants/languages_constants.dart';
 import '../../../../../commons/error/app_error.dart';
 import '../../../domain/entity/movie_entity.dart';
@@ -10,21 +12,27 @@ import '../../../domain/use_case/get_trending_movies.dart';
 
 part 'movies_trending_state.dart';
 
-class MoviesTrendingCubit extends Cubit<MoviesTrendingState> {
+class MoviesCubit extends Cubit<MoviesState> {
   final LoaderCubit loaderCubit;
   final GetTrending getTrending;
+  final GetMovieSearch movieSearch;
   final LanguageManagerCubit languagesCubit;
+  final NotificationCubit notificationCubit;
 
-  MoviesTrendingCubit({
+  MoviesCubit({
+    required this.movieSearch,
     required this.getTrending,
     required this.languagesCubit,
     required this.loaderCubit,
-  }) : super(MoviesTrendingInitial());
+    required this.notificationCubit,
+  }) : super(MoviesInitial());
 
+  //Dispatch when we need retrieve Movie trending
   Future<void> loadTrending({int cursorIndex = 1, pageIndex = 1}) async {
     loaderCubit.toggleLoader(true);
 
     final actualLanguage = languagesCubit.state.language.code;
+
     final MovieDataBaseRequestParams paginationParams =
         MovieDataBaseRequestParams(
             index: cursorIndex, page: pageIndex, language: actualLanguage);
@@ -33,19 +41,14 @@ class MoviesTrendingCubit extends Cubit<MoviesTrendingState> {
 
     emit(
       moviesEither.fold(
-        (l) => MoviesTrendingError(l.appErrorType),
-        (movies) {
-          return MoviesTrendingLoaded(
-              movies: movies,
-              supportedLanguage: Languages.languageFromCode(
-                languagesCubit.state.language.code,
-              ).key);
-        },
+        throwError,
+        handleSuccess,
       ),
     );
     loaderCubit.toggleLoader(false);
   }
 
+  //Dispatch when a Language state change
   Future<void> loadTrendingTranslation() async {
     loaderCubit.toggleLoader(true);
 
@@ -57,7 +60,7 @@ class MoviesTrendingCubit extends Cubit<MoviesTrendingState> {
 
     emit(
       moviesEither.fold(
-        (l) => MoviesTrendingError(l.appErrorType),
+        throwError,
         (movies) {
           return MoviesTrendingTranslatedLoaded(
             movies: movies,
@@ -68,6 +71,20 @@ class MoviesTrendingCubit extends Cubit<MoviesTrendingState> {
         },
       ),
     );
+
     loaderCubit.toggleLoader(false);
+  }
+
+  MoviesState throwError(AppError appError) {
+    notificationCubit.showError(appError.appErrorType);
+    return MoviesError(appError.appErrorType);
+  }
+
+  MoviesState handleSuccess(List<MovieEntity> movies) {
+    return MoviesLoaded(
+        movies: movies,
+        supportedLanguage: Languages.languageFromCode(
+          languagesCubit.state.language.code,
+        ).key);
   }
 }

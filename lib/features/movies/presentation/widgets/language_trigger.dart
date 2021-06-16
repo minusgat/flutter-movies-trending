@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/notification_bloc/notification_cubit.dart';
@@ -52,12 +54,12 @@ class LanguageTrigger extends StatelessWidget {
           .toList();
     }
 
-    return BlocConsumer<LanguageManagerCubit, LanguageManagerState>(
-      listener: (context, state) {
-        notificationCubit.show(l10n.languageChanged);
-      },
+    return BlocBuilder<LanguageManagerCubit, LanguageManagerState>(
       builder: (context, state) {
         List<LanguageEntity> languagesList = Languages.languages;
+        Timer(Duration(seconds: 2), () {
+          notificationCubit.show(l10n.languageChanged);
+        });
         return Row(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.center,

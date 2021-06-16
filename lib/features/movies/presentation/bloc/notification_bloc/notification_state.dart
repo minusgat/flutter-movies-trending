@@ -9,3 +9,9 @@ class NotificationLoaded extends NotificationState {
 
   NotificationLoaded(this.notificationEntity);
 }
+
+class NotificationError extends NotificationState {
+  final NotificationErrorEntity notificationErrorEntity;
+
+  NotificationError(this.notificationErrorEntity);
+}

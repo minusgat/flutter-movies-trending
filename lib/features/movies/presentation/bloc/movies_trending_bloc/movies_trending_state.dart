@@ -1,25 +1,30 @@
 part of 'movies_trending_cubit.dart';
 
-class MoviesTrendingState extends Equatable {
-  const MoviesTrendingState();
+class MoviesState extends Equatable {
+  const MoviesState();
 
   @override
   List<Object> get props => [];
 }
 
-class MoviesTrendingInitial extends MoviesTrendingState {}
+class MoviesInitial extends MoviesState {}
 
-class MoviesTrendingError extends MoviesTrendingState {
+class MoviesError extends MoviesState {
   final AppErrorType errorType;
 
-  const MoviesTrendingError(this.errorType);
+  const MoviesError(this.errorType);
+
+
+  @override
+  List<Object> get props => [];
+
 }
 
-class MoviesTrendingLoaded extends MoviesTrendingState {
+class MoviesLoaded extends MoviesState {
   final List<MovieEntity> movies;
   final SupportedLanguage supportedLanguage;
 
-  const MoviesTrendingLoaded(
+  const MoviesLoaded(
       {required this.movies,
       required this.supportedLanguage});
 
@@ -27,7 +32,7 @@ class MoviesTrendingLoaded extends MoviesTrendingState {
   List<Object> get props => [movies,supportedLanguage];
 }
 
-class MoviesTrendingTranslatedLoaded extends MoviesTrendingState {
+class MoviesTrendingTranslatedLoaded extends MoviesState {
   final List<MovieEntity> movies;
   final SupportedLanguage supportedLanguage;
 

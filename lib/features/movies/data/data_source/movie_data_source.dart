@@ -4,6 +4,7 @@ import '../model/movie_model.dart';
 import '../model/movies_results_model.dart';
 
 abstract class MovieDataSource {
+
   Future<List<MovieModel>> getTrending(int page, String language);
 
   Future<List<MovieModel>> getSearchedMovies(String query);

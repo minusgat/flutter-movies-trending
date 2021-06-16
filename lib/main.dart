@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_movies_trending/locator.dart';
 import 'features/movies/domain/use_case/get_movie_search.dart';
 import 'features/movies/presentation/bloc/notification_bloc/notification_cubit.dart';
-import 'package:http/http.dart';
 
 import 'commons/extensions/l10n.dart';
 import 'commons/themes/app_theme.dart';
-import 'features/movies/data/core/api_client.dart';
-import 'features/movies/data/data_source/movie_data_source.dart';
-import 'features/movies/data/repository/movies_repository_impl.dart';
-import 'features/movies/domain/repository/language_repository.dart';
 import 'features/movies/domain/use_case/get_trending_movies.dart';
 import 'features/movies/presentation/bloc/language_bloc/language_cubit.dart';
 import 'features/movies/presentation/bloc/loader_bloc/loader_cubit.dart';
@@ -18,6 +14,8 @@ import 'features/movies/presentation/bloc/movies_trending_bloc/movies_trending_c
 import 'features/movies/presentation/pages/main_screen.dart';
 
 void main() {
+  //Dependency Injection
+  setUpDI();
   runApp(MyApp());
 }
 
@@ -28,19 +26,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ApiClient apiClient = ApiClient(Client());
+    /*ApiClient apiClient = ApiClient(Client());
 
     MovieDataSource movieDataSource = MovieDataSourceImpl(apiClient);
     MovieRepository movieRepository = MovieRepositoryImpl(movieDataSource);
 
     GetTrending getTrending = GetTrending(movieRepository);
-    GetMovieSearch getMovieSearch = GetMovieSearch(movieRepository);
-
-    return buildMultiBlocProvider(getTrending, getMovieSearch);
-  }
-
-  MultiBlocProvider buildMultiBlocProvider(
-      GetTrending getTrending, GetMovieSearch getMovieSearch) {
+    GetMovieSearch getMovieSearch = GetMovieSearch(movieRepository);*/
+    //Initialize Blocs for this feature
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -56,8 +49,8 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (_) => MoviesCubit(
-            movieSearch: getMovieSearch,
-            getTrending: getTrending,
+            movieSearch: locator<GetMovieSearch>(),
+            getTrending: locator<GetTrending>(),
             notificationCubit: BlocProvider.of<NotificationCubit>(_),
             loaderCubit: BlocProvider.of<LoaderCubit>(_),
             languagesCubit: BlocProvider.of<LanguageManagerCubit>(_),
