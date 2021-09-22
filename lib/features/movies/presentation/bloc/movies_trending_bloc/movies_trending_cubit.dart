@@ -1,14 +1,15 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import '../../../domain/entity/pagination_params.dart';
-import '../../../domain/use_case/get_movie_search.dart';
-import '../language_bloc/language_cubit.dart';
-import '../loader_bloc/loader_cubit.dart';
-import '../notification_bloc/notification_cubit.dart';
+
 import '../../../../../commons/constants/languages_constants.dart';
 import '../../../../../commons/error/app_error.dart';
 import '../../../domain/entity/movie_entity.dart';
+import '../../../domain/entity/params/pagination_params.dart';
+import '../../../domain/use_case/get_movie_search.dart';
 import '../../../domain/use_case/get_trending_movies.dart';
+import '../language_bloc/language_cubit.dart';
+import '../loader_bloc/loader_cubit.dart';
+import '../notification_bloc/notification_cubit.dart';
 
 part 'movies_trending_state.dart';
 

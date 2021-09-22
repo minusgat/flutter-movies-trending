@@ -1,10 +1,11 @@
 import 'dart:io';
 
 import 'package:dartz/dartz.dart';
+import 'package:flutter_movies_trending/features/movies/data/model/video_model.dart';
 
 import '../../../../commons/error/app_error.dart';
 import '../../domain/entity/movie_detail_entity.dart';
-import '../../domain/repository/language_repository.dart';
+import '../../domain/repository/movies_repository.dart';
 import '../data_source/movie_data_source.dart';
 import '../model/movie_model.dart';
 
@@ -14,9 +15,10 @@ class MovieRepositoryImpl extends MovieRepository {
   MovieRepositoryImpl(this.movieDataSource);
 
   @override
-  Future<Either<AppError, List<MovieModel>>> getTrending(int page , String language) async {
+  Future<Either<AppError, List<MovieModel>>> getTrending(
+      int page, String language) async {
     try {
-      final movies = await movieDataSource.getTrending(page,language);
+      final movies = await movieDataSource.getTrending(page, language);
       return Right(movies);
     } on SocketException {
       return Left(AppError(AppErrorType.network));
@@ -39,10 +41,23 @@ class MovieRepositoryImpl extends MovieRepository {
   }
 
   @override
-  Future<Either<AppError, MovieDetailEntity>> getMovieDetail(int id,String language) async {
+  Future<Either<AppError, MovieDetailEntity>> getMovieDetail(
+      int id, String language) async {
     try {
       final movieDetail = await movieDataSource.getMovieDetail(id);
       return Right(movieDetail);
+    } on SocketException {
+      return Left(AppError(AppErrorType.network));
+    } on Exception {
+      return Left(AppError(AppErrorType.api));
+    }
+  }
+
+  @override
+  Future<Either<AppError, List<VideoModel>>> getMoviesVideo(int id) async {
+    try {
+      final movieVideosList = await movieDataSource.getMovieVideos(id);
+      return Right(movieVideosList);
     } on SocketException {
       return Left(AppError(AppErrorType.network));
     } on Exception {

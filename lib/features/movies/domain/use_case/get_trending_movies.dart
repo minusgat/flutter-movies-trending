@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import '../entity/pagination_params.dart';
+import '../entity/params/pagination_params.dart';
 
 import '../../../../commons/error/app_error.dart';
 import '../entity/movie_entity.dart';
-import '../repository/language_repository.dart';
+import '../repository/movies_repository.dart';
 import 'use_case.dart';
 
 class GetTrending

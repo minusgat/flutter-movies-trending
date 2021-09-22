@@ -26,13 +26,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /*ApiClient apiClient = ApiClient(Client());
 
-    MovieDataSource movieDataSource = MovieDataSourceImpl(apiClient);
-    MovieRepository movieRepository = MovieRepositoryImpl(movieDataSource);
-
-    GetTrending getTrending = GetTrending(movieRepository);
-    GetMovieSearch getMovieSearch = GetMovieSearch(movieRepository);*/
     //Initialize Blocs for this feature
     return MultiBlocProvider(
       providers: [

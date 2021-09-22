@@ -36,52 +36,56 @@ class MovieCard extends StatelessWidget {
           children: [
             FractionallySizedBox(
               heightFactor: 0.2,
-              child: Padding(
-                padding:
+              child: ListView(
+                children: [
+                  Padding(
+                    padding:
                     const EdgeInsets.symmetric(vertical: kDefaultBorderRadius),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      movie?.title ?? 'Sin titulo',
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.headline5,
-                    ),
-                    Text(
-                      buildMovieReleaseDate(movie, state),
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
-                    Row(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
+                      children: [
                         Text(
-                          "${movie?.voteAverage ?? 5}",
-                          style: Theme.of(context).textTheme.bodyText2,
+                          movie?.title ?? 'Sin titulo',
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.headline5,
                         ),
-                        RatingBar.builder(
-                          itemSize: 20.0,
-                          initialRating: (movie?.voteAverageFormatted ?? 5),
-                          minRating: 1,
-                          direction: Axis.horizontal,
-                          allowHalfRating: true,
-                          itemCount: 5,
-                          itemPadding: EdgeInsets.symmetric(horizontal: 1.0),
-                          itemBuilder: (context, _) => Icon(
-                            Icons.star,
-                            color: ratingColor,
-                            size: 2.0,
-                          ),
-                          onRatingUpdate: (rating) {
-                            print(rating);
-                          },
+                        Text(
+                          buildMovieReleaseDate(movie, state),
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Text(
+                              "${movie?.voteAverage ?? 5}",
+                              style: Theme.of(context).textTheme.bodyText2,
+                            ),
+                            RatingBar.builder(
+                              itemSize: 20.0,
+                              initialRating: (movie?.voteAverageFormatted ?? 5),
+                              minRating: 1,
+                              direction: Axis.horizontal,
+                              allowHalfRating: true,
+                              itemCount: 5,
+                              itemPadding: EdgeInsets.symmetric(horizontal: 1.0),
+                              itemBuilder: (context, _) => Icon(
+                                Icons.star,
+                                color: ratingColor,
+                                size: 2.0,
+                              ),
+                              onRatingUpdate: (rating) {
+                                print(rating);
+                              },
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
             ),
             Align(

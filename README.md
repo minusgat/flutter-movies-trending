@@ -8,7 +8,7 @@
 
 ![App UI](/demo.png)
 
-##Instalation
+## Instalation
 1.- Get Packages
 ```sh
 flutter pub get 
@@ -22,7 +22,7 @@ flutter gen-l10n
 flutter run 
 ```
 
-###IOS case
+### IOS case
 - [Adding Supported Locales](#adding-supported-locales)
 
 

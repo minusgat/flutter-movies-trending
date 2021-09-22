@@ -4,7 +4,7 @@ import 'package:meta/meta.dart';
 
 import '../../../../../commons/error/app_error.dart';
 import '../../../domain/entity/movie_detail_entity.dart';
-import '../../../domain/entity/movie_params.dart';
+import '../../../domain/entity/params/movie_params.dart';
 import '../../../domain/use_case/get_movie_detail.dart';
 
 part 'movie_detail_state.dart';

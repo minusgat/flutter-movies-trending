@@ -4,7 +4,7 @@ import 'package:http/http.dart';
 import 'features/movies/data/core/api_client.dart';
 import 'features/movies/data/data_source/movie_data_source.dart';
 import 'features/movies/data/repository/movies_repository_impl.dart';
-import 'features/movies/domain/repository/language_repository.dart';
+import 'features/movies/domain/repository/movies_repository.dart';
 import 'features/movies/domain/use_case/get_movie_search.dart';
 import 'features/movies/domain/use_case/get_trending_movies.dart';
 import 'features/movies/presentation/bloc/language_bloc/language_cubit.dart';

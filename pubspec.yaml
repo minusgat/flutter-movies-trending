@@ -27,7 +27,7 @@ dependencies:
   #Network Image
   cached_network_image: ^3.0.0
   #State Management
-  flutter_bloc: ^7.0.1
+  flutter_bloc: ^7.3.0
   #SVG Resources
   flutter_svg: ^0.22.0
   #Toast
@@ -46,7 +46,7 @@ dev_dependencies:
   #Mocktail
   mocktail: ^0.1.4
   #Bloc Test
-  bloc_test: ^8.0.2
+  bloc_test: ^8.2.0
 
 
 flutter:
