@@ -11,6 +11,7 @@ class NotificationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<NotificationCubit, NotificationState>(
       listener: (BuildContext context, state) {
+
         if (state is NotificationLoaded)
           showNotification(
             context,
