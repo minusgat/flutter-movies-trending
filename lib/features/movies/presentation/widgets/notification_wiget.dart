@@ -51,7 +51,7 @@ class NotificationWidget extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(kDefaultBorderRadius),
         ),
-        color: isError ? Colors.red : Theme.of(context).accentColor,
+        color: isError ? Colors.red : Theme.of(context).colorScheme.secondary,
       ),
       child: Row(
         children: [
