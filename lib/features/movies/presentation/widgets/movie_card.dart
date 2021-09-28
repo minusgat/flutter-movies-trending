@@ -1,18 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../commons/constants/color_constants.dart';
-import '../../domain/entity/movie_entity.dart';
-import '../bloc/language_bloc/language_cubit.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:intl/intl.dart';
-import 'levitation_animated_widget.dart';
-import 'rounded_container.dart';
+
+import '../../../../commons/constants/color_constants.dart';
 import '../../../../commons/constants/size_constants.dart';
 import '../../data/core/api_constants.dart';
 import '../../data/model/movie_model.dart';
+import '../bloc/language_bloc/language_cubit.dart';
 import 'blur_image.dart';
 import 'flip_card.dart';
+import 'levitation_animated_widget.dart';
+import 'rounded_container.dart';
 import 'rounded_image.dart';
 
 class MovieCard extends StatelessWidget {
@@ -39,8 +39,8 @@ class MovieCard extends StatelessWidget {
               child: ListView(
                 children: [
                   Padding(
-                    padding:
-                    const EdgeInsets.symmetric(vertical: kDefaultBorderRadius),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: kDefaultBorderRadius),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -70,7 +70,8 @@ class MovieCard extends StatelessWidget {
                               direction: Axis.horizontal,
                               allowHalfRating: true,
                               itemCount: 5,
-                              itemPadding: EdgeInsets.symmetric(horizontal: 1.0),
+                              itemPadding:
+                                  EdgeInsets.symmetric(horizontal: 1.0),
                               itemBuilder: (context, _) => Icon(
                                 Icons.star,
                                 color: ratingColor,

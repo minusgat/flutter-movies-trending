@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../constants/color_constants.dart';
 
 class AppTheme {
@@ -25,7 +26,6 @@ class AppTheme {
   static final darkTheme = ThemeData(
     backgroundColor: darkPrimary,
     primaryColor: darkPrimary,
-    accentColor: accent,
     scaffoldBackgroundColor: darkPrimary,
     textTheme: TextTheme(
       bodyText1: TextStyle(color: lightPrimary),
@@ -48,5 +48,6 @@ class AppTheme {
       color: lightPrimary,
     ),
     bottomNavigationBarTheme: bottomNavigationBarThemeData,
+    colorScheme: ColorScheme.fromSwatch().copyWith(secondary: accent),
   );
 }

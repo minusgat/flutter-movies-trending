@@ -79,7 +79,7 @@ class _AnimatedBottomMenuState extends State<AnimatedBottomMenu>
   Widget menuBuilder(BuildContext context, ScrollController scrollController) {
     return Container(
       decoration: BoxDecoration(
-        color: Theme.of(context).accentColor,
+        color: Theme.of(context).colorScheme.secondary,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(kDefaultBorderRadius),
           topRight: Radius.circular(kDefaultBorderRadius),

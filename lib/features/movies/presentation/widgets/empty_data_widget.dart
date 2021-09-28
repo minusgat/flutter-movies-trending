@@ -19,14 +19,14 @@ class EmptyDataWidget extends StatelessWidget {
               child: SvgPicture.asset(
                 'assets/ic-game.svg',
                 height: 124,
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).colorScheme.secondary,
               ),
             ),
           ),
           Text(
             l10n.emptyResponse,
             style: TextStyle(
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
             ),
           ),
         ],

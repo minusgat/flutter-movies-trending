@@ -1,13 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter_movies_trending/features/movies/data/core/api_client.dart';
-import 'package:flutter_movies_trending/features/movies/data/core/unauthorised_exception.dart';
 import 'package:flutter_movies_trending/features/movies/data/data_source/movie_data_source.dart';
 import 'package:flutter_movies_trending/features/movies/data/model/movies_results_model.dart';
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:matcher/matcher.dart';
-import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
@@ -29,8 +26,7 @@ void main() {
     ).thenAnswer((_) async => json.decode(fixture('movie_trending_es.json')));
   }
 
-  void setUpMockHttpClientFailure() async{
-
+  void setUpMockHttpClientFailure() async {
     when(mockHttpClient.get('trending/movie/day', params: anyNamed('params')))
         .thenThrow(Exception());
   }

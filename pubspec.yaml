@@ -17,7 +17,7 @@ dependencies:
   # Internationalization and localization facilities
   intl: ^0.17.0
   # Value equality
-  equatable: ^2.0.2
+  equatable: ^2.0.3
   # Functional Programming in Dart
   dartz: ^0.10.0-nullsafety.1
   #Http Client

@@ -2,12 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter_movies_trending/features/movies/data/model/movie_model.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
 
 void main() {
-
   final movieModel = MovieModel(
     id: 299534,
     title: 'Avengers: Endgame',
@@ -24,7 +22,6 @@ void main() {
   );
 
   group('fromJson', () {
-
     test(
       'should return a valid model when the ID number is an integer',
       () async {
@@ -37,7 +34,6 @@ void main() {
         expect(result, movieModel);
       },
     );
-
   });
 
   group('toJson', () {
